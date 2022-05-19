@@ -47,7 +47,7 @@ i)Image Translation
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-input_image=cv2.imread("2.png") 
+input_image=cv2.imread("boat.png") 
 input_image=cv2.cvtColor(input_image, cv2.COLOR_BGR2RGB) 
 plt.axis("off") 
 plt.imshow(input_image)
@@ -109,31 +109,31 @@ plt.imshow(rotated_img)
 plt.show() 
 
 vi)Image Cropping
-cropped_img=input_image[0:400,300:600]
+cropped_img=input_image[100:300,100:300]
 plt.axis('off')
 plt.imshow(cropped_img)
 plt.show()
 ```
 ## Output:
  ### i)Image Translation
-![input_image](index.png)
-![outputs](o1.png)
+![input_image](1.png)
+![outputs](2.png)
 
  ### ii) Image Scaling
-![outputs](o2.png)
+![outputs](3.png)
 
 ### iii)Image shearing
-![outputs](o3.png)
-![outputs](o4.png)
+![outputs](4.png)
+![outputs](5.png)
 
 ### iv)Image Reflection
-![outputs](o5.png)
+![outputs](6.png)
 
 ### v)Image Rotation
-![outputs](o6.png)
+![outputs](7.png)
 
 ### vi)Image Cropping
-![outputs](o7.png)
+![outputs](8.png)
 
 ## Result: 
 Thus the different image transformations such as Translation, Scaling, Shearing, Reflection, Rotation and Cropping are done using OpenCV and python programming.
